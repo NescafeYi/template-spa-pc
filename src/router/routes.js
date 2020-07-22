@@ -9,35 +9,35 @@ import Settimg from '@/pages/setting';
 // 配置路由
 export const routes = [
     {
-        path: "/home",
-        component: Home,
+        path: '/home',
+        component: Home
     },
     {
-        path: "/main",
+        path: '/main',
         component: App,
         routes: [
             {
-                path: "/main/content1",
+                path: '/main/content1',
                 component: Content1
             },
             {
-                path: "/main/content2",
+                path: '/main/content2',
                 component: Content2
             },
             {
-                path: "/main/content5",
+                path: '/main/content5',
                 component: Content5
             },
             {
-                path: "/main/content6",
+                path: '/main/content6',
                 auth: true, //需要权限认证
                 component: Content6
             }
         ]
     },
     {
-        path: "/setting",
+        path: '/setting',
         auth: true, //需要权限认证
-        component: Settimg,
-    },
-]
+        component: Settimg
+    }
+];

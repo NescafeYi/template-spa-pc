@@ -1,7 +1,7 @@
 
 import { Layout, Menu } from 'antd';
 import '../index.less';
-import { useLocation, useHistory } from "react-router-dom";
+import { useLocation, useHistory } from 'react-router-dom';
 const { Header } = Layout;
 
 const Head = () => {
@@ -11,8 +11,8 @@ const Head = () => {
     let activeMenu = location.pathname;
 
     const onSelect = (selectItem) => {
-        history.push(selectItem.key)
-    }
+        history.push(selectItem.key);
+    };
     return (
         <Header>
             <div className="logo" />
@@ -28,7 +28,7 @@ const Head = () => {
                 <Menu.Item key="/setting">设置</Menu.Item>
             </Menu>
         </Header>
-    )
-}
+    );
+};
 
-export default Head
+export default Head;
