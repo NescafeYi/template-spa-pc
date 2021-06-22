@@ -2,6 +2,7 @@
   "name": "template-spa-pc",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@babel/core": "7.7.4",
     "@svgr/webpack": "4.3.3",
@@ -77,6 +78,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
+    "deploy": "gh-pages -d build",
     "lint": "node_modules/.bin/eslint --ext .js --ext .jsx --ext .ts --ext .tsx src/",
     "lint:fix": "node_modules/.bin/eslint --ext .js --ext .jsx --ext .ts --ext .tsx --fix src/"
   },
@@ -158,5 +160,8 @@
         }
       ]
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
